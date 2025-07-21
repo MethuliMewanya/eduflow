@@ -12,6 +12,7 @@ Built with:
 
 ## 📁 Project Structure
 
+```bash
 project-root/
 ├── backend/                    # Ballerina backend source
 │   └── main.bal                # Main Ballerina service file
@@ -26,6 +27,7 @@ project-root/
 ├── README.md                   # Main project documentation
 └── SETUP_GUIDELINES.md         # Setup and run instructions (you are here!)
 
+```
 ---
 
 ## ⚙️ Requirements
