@@ -13,20 +13,18 @@ Built with:
 ## 📁 Project Structure
 
 project-root/
+├── backend/                    # Ballerina backend source
+│   └── main.bal                # Main Ballerina service file
 │
-├── backend/ # Ballerina backend source
-│ └── main.bal # Main service file
+├── frontend/                   # React frontend (Vite + TypeScript)
+│   ├── src/                    # Source code for frontend
+│   └── vite.config.ts          # Vite configuration file
 │
-├── frontend/ # React frontend (Vite + TS)
-│ ├── src/
-│ ├── vite.config.ts
-│ └── ...
-│
-├── Dockerfile.backend # Dockerfile for backend
-├── Dockerfile.frontend # Dockerfile for frontend
-├── docker-compose.yml # Orchestration
-└── README.md 
-└── SETUP_GUIDELINES.md # You are here!
+├── Dockerfile.backend          # Dockerfile for backend
+├── Dockerfile.frontend         # Dockerfile for frontend
+├── docker-compose.yml          # Docker Compose orchestration file
+├── README.md                   # Main project documentation
+└── SETUP_GUIDELINES.md         # Setup and run instructions (you are here!)
 
 ---
 
