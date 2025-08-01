@@ -5,7 +5,7 @@
 import os
 import google.generativeai as genai
 
-# Use your API key here
+# Use API key here
 # genai.configure(api_key="")
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
@@ -22,7 +22,7 @@ Return the output in a clean, readable format with bullet points."""
     response = model.generate_content(prompt)
     return response.text
 
-# STEP 4: Test it
+# STEP 4: Test 
 # subject = "Data Structures"
 # marks = 65
 # output = generate_learning_path(subject, marks)
@@ -43,6 +43,6 @@ async def get_learning_path(data: Input):
     result = generate_learning_path(data.subject, data.marks)
     return {"path": result}
 
-# If running locally (you don't need this in colab)
+# If running locally
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
