@@ -17,9 +17,7 @@ const Footer: React.FC = () => {
             <h1>Connect With Us</h1>
           </NavLink>
           
-          <NavLink to="/help" className="element d-block mb-3">
-            Help Center
-          </NavLink>
+          
 
           <div className="flex-wrap gap-0 mt-3 social-icons d-flex justify-content-center">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
@@ -41,38 +39,12 @@ const Footer: React.FC = () => {
         <div className="mt-4 footer-links row">
           <div className="mb-3 text-center col-md-6">
             <h5>© 2025 EduFlow</h5>
-            <ul className="list-inline">
-              <li className="mx-2 list-inline-item d-block d-md-inline">
-                <NavLink to="/about" className="footer-link">About Us</NavLink>
-              </li>
-              <li className="mx-3 list-inline-item">
-                <NavLink to="/terms" className="footer-link">Terms</NavLink>
-              </li>
-              <li className="mx-3 list-inline-item">
-                <NavLink to="/privacy" className="footer-link">Privacy Policies</NavLink>
-              </li>
-              <li className="mx-3 list-inline-item">
-                <NavLink to="/cookies" className="footer-link">Cookies</NavLink>
-              </li>
-              <li className="mx-3 list-inline-item">
-                <NavLink to="/status" className="footer-link">Status</NavLink>
-              </li>
-            </ul>
+            
           </div>
 
           <div className="mb-3 text-center col-md-6">
             <h5>© 2025 Mavericks</h5>
-            <ul className="list-inline">
-              <li className="mx-3 list-inline-item">
-                <NavLink to="/developers" className="footer-link">Developers</NavLink>
-              </li>
-              <li className="mx-3 list-inline-item">
-                <NavLink to="/license" className="footer-link">License & Registrations</NavLink>
-              </li>
-              <li className="mx-3 list-inline-item">
-                <NavLink to="/privacy-terms" className="footer-link">Privacy Terms</NavLink>
-              </li>
-            </ul>
+            
           </div>
         </div>
       </div>
