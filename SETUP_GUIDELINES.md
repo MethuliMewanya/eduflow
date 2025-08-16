@@ -50,10 +50,10 @@ cd eduflow
 ```
 2. **Set Your YouTube API Key**
 
-To use EduFlow, you need a YouTube Data API v3 key. Follow the below linked YouTube to get your API key.
-- [How to get YouTube API key](https://youtu.be/LLAZUTbc97I?si=vCAsf443VPKK1j1N)
+- To use EduFlow, you need a YouTube Data API v3 key. Follow the below linked YouTube to get your API key.
+ [How to get YouTube API key](https://youtu.be/LLAZUTbc97I?si=vCAsf443VPKK1j1N)
 
-Copy the generated key and paste it in the line 77 of main.bal file in the backend folder.
+- Copy the generated key and paste it in the line 77 of main.bal file in the backend folder.
 
 2. **Build & Run All Services**
 
