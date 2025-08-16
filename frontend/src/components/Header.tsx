@@ -57,7 +57,7 @@ const Header: React.FC = () => {
                 Services
               </NavLink>
             </li>
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 href="#!"
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
                   </Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

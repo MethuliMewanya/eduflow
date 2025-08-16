@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
       <div className="container py-4 text-center">
         {/* Stay Updated Section */}
         <div className="stay-updated">
-          <NavLink to="/connect-with-us" className="d-block mb-2">
+          <NavLink to="/connect-with-us" className=" connect d-block mb-2">
             <h1>Connect With Us</h1>
           </NavLink>
           

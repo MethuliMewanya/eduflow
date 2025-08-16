@@ -1,0 +1,96 @@
+/* About.scss */
+
+.about-page {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #789bcf, #4c87a2);
+  padding: 5rem 0;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #292727;
+  }
+
+  .highlight {
+    color: #ffd43b;
+    font-weight: 700;
+  }
+  p{
+    font-style: italic;
+  }
+}
+
+/* Card Styles */
+.about-card {
+  background: #ffffff;
+  border-radius: 1.8rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    color: #44628f;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+}
+
+/* Mission Section */
+.about-mission {
+  background: linear-gradient(135deg, #8894a6, #0d6efd);
+
+  h2 {
+    font-size: 2.0rem;
+  }
+
+  .highlight {
+    color: #102c15;
+    font-weight: 600;
+  }
+}
+
+/* Team Section */
+.team-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  h5 {
+    margin-top: 0.5rem;
+    color: #3866aa;
+    font-weight: 400;
+    font-size: 1.0rem;
+
+  }
+  p{
+    font-size: 0.7rem;
+  }
+
+  h2{
+    font-size: 1.2rem;
+  }
+}
