@@ -158,7 +158,7 @@ function Home() {
               <input
                 type="text"
                 className="form-control form-control-edu"
-                placeholder="e.g., math or science"
+                placeholder="Ex: ICT Grade 11 / Hydrolics"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
               />
