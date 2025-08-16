@@ -1,0 +1,88 @@
+
+
+.contact-page {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero Section */
+.contact-hero {
+  padding: 4rem 0;
+
+  .hero-image {
+    min-height: 500px;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0)
+      ),
+      url("../assets/cover5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+  }
+}
+
+/* Form Card */
+.contact-card {
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 1rem;
+  background: #a0b0b584;
+
+  h3 {
+    color: #3764a9;
+  }
+
+  .form-control {
+    border-radius: 0.75rem;
+  }
+
+  button {
+    border-radius: 0.75rem;
+    font-weight: 600;
+  }
+}
+
+/* Info Card */
+.contact-info {
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background: #bad3dd;
+
+  h3 {
+    color: #3764a9;
+  }
+
+  p {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+}
+.hero-image {
+//   min-height: 800px;
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../assets/cover5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1rem;
+  display: flex; /* ensures text centers */
+  align-items: center;
+  justify-content: center;
+
+  .hero-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  }
+}
