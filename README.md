@@ -1,2 +1,2 @@
-# eduflow
-A ballerina based API service that takes student's subject and quiz marks as a response and recommends a personalized YouTube based learning path  using simple ML logic.
+# EduFlow 🎯
+Smart, personalized learning paths! Enter a student’s subject and quiz marks, and get a tailored YouTube-based learning path with videos, tutorials, and exercises. Built with Ballerina using simple rule-based logic.

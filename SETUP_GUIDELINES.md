@@ -5,7 +5,6 @@ Built with:
 
 - **Backend:** [Ballerina](https://ballerina.io/)
 - **Frontend:** Vite + React + TypeScript
-- **Containerization:** Docker + Docker Compose
 - **Collaboration:** GitHub
 
 ---
@@ -49,6 +48,12 @@ git clone https://github.com/MethuliMewanya/eduflow.git
 cd eduflow
 
 ```
+2. **Set Your YouTube API Key**
+
+To use EduFlow, you need a YouTube Data API v3 key. Follow the below linked YouTube to get your API key.
+- [How to get YouTube API key](https://youtu.be/LLAZUTbc97I?si=vCAsf443VPKK1j1N)
+
+Copy the generated key and paste it in the line 77 of main.bal file in the backend folder.
 
 2. **Build & Run All Services**
 
@@ -62,40 +67,6 @@ docker compose up --build
 - **Frontend:** http://localhost:5173
 - **Backend (API):** http://localhost:8080
 
----
-
-## 🔁 Running the Project Again (After First Time)
-
-Once built, you can just run:
-
-```bash
-docker compose up
-
-```
-
-To stop:
-
-```bash
-docker compose down
-
-```
-
-If you changed any Dockerfiles or dependencies, re-run with:
-
-```bash
-docker compose up --build
-
-```
-
----
-
-
-## 🧯 Common Issues
-
-- **Port Already in Use:** Make sure ports 5173 and 8080 are free, or change them in Docker and Vite config.
-- **Crypto Hash Error (React):** This has been resolved using proper polyfills and Docker setup. If it reappears, ensure Docker uses Node 20+.
-
----
 
 ## 📦 Backend (Ballerina)
 
@@ -124,6 +95,13 @@ npm install
 npm run dev
 
 ```
+
+## 🧯 Common Issues
+
+- **Port Already in Use:** Make sure ports 5173 and 8080 are free, or change them in Docker and Vite config.
+- **Crypto Hash Error (React):** This has been resolved using proper polyfills and Docker setup. If it reappears, ensure Docker uses Node 20+.
+
+---
 
 
 
