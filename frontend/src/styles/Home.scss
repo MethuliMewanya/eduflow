@@ -1,0 +1,109 @@
+//Global Colours
+$primary-color: #48cae4;
+$secondary-color: #9beeff;
+$text-color: #000;
+$text-white: #ffffff;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.loading-icon {
+  animation: bounce 2s infinite ease-in-out;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+.section-1 {
+    .topic {
+        // background-image: url('/assets/Home_cover.png');
+        // background: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0,)),url(src/assets/Home_cover.png);
+        background: linear-gradient(
+                to left,
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0)
+            ),
+            url("../assets/cover6.jpg");
+        min-height: 690px;
+        color: $text-white;
+        h1 {
+            font-size: 4em;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: 500;
+
+    margin-bottom: 40px;
+    margin-top: 30px;
+
+    
+    // Interactive animation
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2); // soft glow
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4); // more intense glow
+    }
+
+    &:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 10px rgba(0, 123, 255, 0.2); // pressed look
+    }
+
+    }
+.hover-shadow:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.explore-section {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+
+  .explore-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .box-services {
+    background-color: #146097; // light blue
+  }
+
+  .box-gallery {
+    background-color: #fce4ec; // light pink
+  }
+
+  .box-contact {
+    background-color: #e8f5e9; // light green
+  }
+
+  .card {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
