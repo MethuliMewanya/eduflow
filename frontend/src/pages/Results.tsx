@@ -99,6 +99,7 @@ function Results() {
 export default Results;*/
 
 /////////////////////////////Thumbnails + Titles
+/*
 function Results() {
   const { state } = useLocation();
   const navigate = useNavigate();
@@ -162,4 +163,89 @@ function Results() {
 }
 
 export default Results;
+*/
 
+///////////////////////////////////////// with styles
+function Results() {
+  const { state } = useLocation();
+  const navigate = useNavigate();
+
+  if (!state) {
+    return (
+      <div className="results-page">
+        <div className="empty-card">
+          <h4 className="text-danger">⚠ No data available</h4>
+          <p className="text-muted">Please go back and submit the form.</p>
+          <button className="btn-primary mt-3" onClick={() => navigate("/")}>
+            ⬅ Go Back
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  const { subject, level, videos } = state;
+
+  const getEmbedUrl = (url: string) => {
+    const match = url.match(/(?:v=|youtu\.be\/)([^&]+)/);
+    return match ? `https://www.youtube.com/embed/${match[1]}` : null;
+  };
+
+  return (
+    <div className="results-page">
+      {/* Header with logo */}
+      <header className="results-header">
+        <img src="/logo1.png" alt="EduFlow Logo" className="logo" />
+      </header>
+      {/* Heading */}  
+      <h2 className="results-heading">
+         {subject.toUpperCase()}
+      </h2>
+      <h2 className="results-heading">
+         {level} Level Recommendations
+      </h2>
+      <p className="results-subtitle">
+        {videos.length} hand-picked learning videos just for you!
+      </p>
+
+      {/* Video Grid */}
+      <div className="results-grid">
+        {videos.map((video: { url: string; title: string }, idx: number) => {
+          const embedUrl = getEmbedUrl(video.url);
+          if (!embedUrl) return null;
+
+          return (
+            <div key={idx} className="video-card">
+              <div className="video-frame">
+                <iframe
+                  src={embedUrl}
+                  title={video.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div className="video-body">
+                <p className="video-title">{video.title}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Button */}
+      <div className="text-center mt-4">
+        <button className="btn-primary" onClick={() => navigate("/")}>
+          Try Another
+        </button>
+      </div>
+      
+      {/*Footer*/}
+      <footer className="results-footer">
+        © Mavericks Quad 2025 | All Rights Reserved
+      </footer>
+    </div>
+  );
+}
+
+export default Results;

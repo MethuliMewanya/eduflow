@@ -280,7 +280,7 @@ function getLevel(int marks) returns string {
 }
 
 function getVideosFromYouTube(string subject, string level) returns Video[]|error {
-    string apiKey = "";   // ⬅️ Replace this with your key
+    string apiKey = "AIzaSyAlvXLYXZzrH7c4HwjppQbya4mPC-azY38";   // ⬅️ Replace this with your key
     string query = level + " " + subject + " tutorial";
 
     string path = "/youtube/v3/search?part=snippet&q=" + 
