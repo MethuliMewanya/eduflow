@@ -284,7 +284,7 @@ function getVideosFromYouTube(string subject, string level) returns Video[]|erro
     string query = level + " " + subject + " tutorial";
 
     string path = "/youtube/v3/search?part=snippet&q=" + 
-                  query + "&maxResults=5&type=video&key=" + apiKey;
+                  query + "&maxResults=10&type=video&key=" + apiKey;
 
     http:Client ytClient = check new ("https://www.googleapis.com");
 

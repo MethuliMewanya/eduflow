@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import '../styles/Results.css'; 
+import '../styles/Results.scss';
 
 /*
 function Results() {
@@ -123,7 +123,8 @@ function Results() {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-2 text-center">📚 {subject.toUpperCase()} - {level} Level Recommendations</h2>
+      <h2 className="mb-2 text-center">{subject.toUpperCase()}</h2>
+      <h2 className="mb-2 text-center"> {level} Level Recommendations</h2>
       <p className="text-muted text-center">{videos.length} hand-picked learning videos just for you!</p>
 
       <div className="row">
@@ -153,8 +154,8 @@ function Results() {
       </div>
 
       <div className="text-center mt-4">
-        <button className="btn btn-outline-primary" onClick={() => navigate('/')}>
-          🔁 Try Another
+        <button className="video-recommendation__button" onClick={() => navigate('/')}>
+          ReFlow
         </button>
       </div>
     </div>
