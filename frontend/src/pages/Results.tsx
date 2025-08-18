@@ -125,16 +125,16 @@ function Results() {
     <div className="container mt-5">
       <h2 className="mb-2 text-center">{subject.toUpperCase()}</h2>
       <h2 className="mb-2 text-center"> {level} Level Recommendations</h2>
-      <p className="text-muted text-center">{videos.length} hand-picked learning videos just for you!</p>
+      <p className="text-muted text-center mt-2 mb-4">{videos.length} hand-picked learning videos just for you!</p>
 
-      <div className="row">
+      <div className="row mt-4 justify-content-center">
         {videos.map((video: { url: string; title: string }, idx: number) => {
           const embedUrl = getEmbedUrl(video.url);
           if (!embedUrl) return null;
 
           return (
             <div key={idx} className="col-md-6 col-lg-4 mb-4">
-              <div className="card shadow-sm h-100 border-0 hover-card">
+              <div className="card shadow h-100 border rounded hover-card">
                 <div className="ratio ratio-16x9">
                   <iframe
                     src={embedUrl}
@@ -153,9 +153,9 @@ function Results() {
         })}
       </div>
 
-      <div className="text-center mt-4">
+      <div className="text-center mt-4 mb-4">
         <button className="video-recommendation__button" onClick={() => navigate('/')}>
-          ReFlow
+          Want To Explore Another Subject ?
         </button>
       </div>
     </div>
