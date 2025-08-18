@@ -62,7 +62,7 @@ const About = () => {
               /> */}
               <Card.Body>
                 <h5 className="fw-bold">Methuli Mewanya</h5>
-                <p className="text-muted">mmmm@gmail.com</p>
+                <p className="text-muted">methulimewanya12ab@gmail.com</p>
               </Card.Body>
             </Card>
           </Col>
@@ -75,7 +75,7 @@ const About = () => {
               /> */}
               <Card.Body>
                 <h5 className="fw-bold">Belani Jayasinghe</h5>
-                <p className="text-muted">aaa@gmail.com</p>
+                <p className="text-muted">nilaknajayasinghe@gmail.com</p>
               </Card.Body>
             </Card>
           </Col>
@@ -88,7 +88,7 @@ const About = () => {
               /> */}
               <Card.Body>
                 <h5 className="fw-bold">Hansani Danushika</h5>
-                <p className="text-muted">ddd@gmail.com</p>
+                <p className="text-muted">hansanidhanushika9@gmail.com</p>
               </Card.Body>
             </Card>
           </Col>

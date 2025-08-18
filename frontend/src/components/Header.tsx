@@ -1,14 +1,19 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
-// import logo from '../assets/logo-removebg.png'
+import logo from '../assets/logox.png'
 const Header: React.FC = () => {
  return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container">
         {/* Brand / Logo */}
         <Link className="navbar-brand" to="/">
-          EduFlow
-</Link>
+           <img 
+            src={logo}  
+            alt="EduFlow Logo" 
+            height="60" 
+            className="d-inline-block align-top"
+  />
+        </Link>
 
         {/*  menu button for small screens */}
         <button
@@ -49,12 +54,12 @@ const Header: React.FC = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/services"
+                to="/contact"
                 className={({ isActive }) =>
                   "nav-link" + (isActive ? " active" : "")
                 }
               >
-                Services
+                Contact US
               </NavLink>
             </li>
             {/* <li className="nav-item dropdown">
