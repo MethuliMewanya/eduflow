@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 # eduflow
 A ballerina based API service that takes student's subject and quiz marks as a response and recommends a personalized YouTube based learning path  using simple ML logic.
 =======
+=======
+>>>>>>> 1b327a38b172b1f4ea49241c20bfe5725d8c1b1c
 # 🎓 EduFlow - Student Materials Recommendation System
 
 EduFlow is a full-stack web application that recommends YouTube videos based on students' marks and subjects. It is designed to help learners access study material at the right difficulty level, saving time and improving motivation.
@@ -22,6 +25,7 @@ EduFlow solves this problem by allowing students to enter their subject and mark
 - Beginner, intermediate, and advanced-level categorization
 - Built with React + Vite + TypeScript frontend and Ballerina backend
 
+<<<<<<< HEAD
 ### Future Considerations
 
 - Transition from rule-based logic to machine learning for smarter, adaptive recommendations.
@@ -30,3 +34,6 @@ EduFlow solves this problem by allowing students to enter their subject and mark
 
 EduFlow makes learning easier, faster, and more engaging by providing the right resources exactly when they are needed.
 >>>>>>> Stashed changes
+=======
+EduFlow makes learning easier, faster, and more engaging by providing the right resources exactly when they are needed.
+>>>>>>> 1b327a38b172b1f4ea49241c20bfe5725d8c1b1c

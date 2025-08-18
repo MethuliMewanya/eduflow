@@ -1,0 +1,111 @@
+//Global Colours
+$primary-color: #48cae4;
+$secondary-color: #cecece;
+$text-color: #000;
+$text-white: #ffffff;
+
+.results-page {
+    min-height: 100vh;
+    background:
+      radial-gradient(800px 500px at -10% -10%, var($primary-color) 0%, transparent 60%),
+      radial-gradient(700px 450px at 110% 110%, var($text-white) 0%, transparent 60%),
+      linear-gradient(135deg, var(#9beeff) 0%, var($text-white) 100%);
+    text-align: center;
+    color: #333;
+    padding: 2rem;
+  
+    h2 {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      margin-bottom: 2rem;
+      padding: 2rem;
+    }
+  
+    /* Center video cards */
+    .results-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; // ✅ ensures all cards center
+      gap: 1.5rem;
+      margin-top: 2rem;
+  
+      .video-card {
+        //background: #fff;
+        background: #6b9c9c;
+        border-radius: 16px;
+        width: 320px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+  
+        .video-frame {
+          aspect-ratio: 16/9;
+          iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+          }
+        }
+  
+        .video-body {
+          padding: 0.75rem 1rem;
+  
+          .video-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: black;
+            margin: 10px;
+          }
+        }
+      }
+    }
+ 
+    &__button {
+        
+        background-color: #2a3846;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        border: 0;
+        border-radius: 12px;
+        padding: 0.75rem 1rem;
+        //background-image: linear-gradient(90deg, var(--edu-primary), var(--edu-primary-2));
+        transition: transform 0.15s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    
+        &:hover {
+          /*background-color: darken(#007bff, 8%);*/
+          transform: translateY(-2px);
+        }
+    
+        &:active {
+          transform: translateY(0);
+        }
+    }
+
+    .results-footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  }
+  
+  /* Fix Bootstrap override for hover */
+  .hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
