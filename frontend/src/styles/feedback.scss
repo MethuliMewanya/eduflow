@@ -52,7 +52,7 @@
       transition: background-color 0.3s ease, transform 0.2s ease;
 
       &:hover {
-        background-color: darken(#007bff, 8%);
+        /*background-color: darken(#007bff, 8%);*/
         transform: translateY(-2px);
       }
 

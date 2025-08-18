@@ -76,7 +76,7 @@ const Home = () => {
                 <input
                 type="text"
                 className="video-recommendation__input"
-                placeholder="e.g., math or science"
+                placeholder="Ex: Math / Hydrolics"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
                 />
