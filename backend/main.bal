@@ -171,9 +171,14 @@ function getLevel(int marks) returns string {
     }
 }
 
+<<<<<<< Updated upstream
 function getVideosFromYouTube(string subject, string level) returns string[]|error {
     
     string apiKey = ""; // ⬅️ Replace this with your key
+=======
+function getVideosFromYouTube(string subject, string level) returns Video[]|error {
+    string apiKey = "AIzaSyB-sXzwPng18G3zqzcQCZ4c7fT2bv-5MT8";   // ⬅️ Replace this with your key
+>>>>>>> Stashed changes
     string query = level + " " + subject + " tutorial";
 
     string path = "/youtube/v3/search?part=snippet&q=" + 
