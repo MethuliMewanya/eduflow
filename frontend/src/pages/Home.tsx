@@ -69,14 +69,14 @@ const Home = () => {
 
              {/*section 2*/}
              <div className="video-recommendation">
-            <h2 className="video-recommendation__title">🎓 Get Video Recommendations here</h2>
+            <h2 className="video-recommendation__title">🎓 Get Video Recommendations Here</h2>
 
             <div className="video-recommendation__group">
                 <label className="video-recommendation__label">Subject</label>
                 <input
                 type="text"
                 className="video-recommendation__input"
-                placeholder="Ex: Math / Hydrolics"
+                placeholder="Ex: Math / Hydraulics"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
                 />
