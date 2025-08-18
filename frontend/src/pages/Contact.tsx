@@ -59,10 +59,10 @@ const Contact = () => {
               <Card.Body>
                 <h3 className="fw-bold mb-4">Reach Us At</h3>
                 <p>
-                  📍 <strong>Address:</strong> 123, Gangodawila, Nugegoda, Colombo, Sri Lanka.
+                  📍 <strong>Address:</strong> 123 Learning Street, Colombo, Sri Lanka
                 </p>
                 <p>📞 <strong>Phone:</strong> +94 77 123 4567</p>
-                <p>📧 <strong>Email:</strong> mavericksssquad@gmail.com</p>
+                <p>📧 <strong>Email:</strong> contact@eduflow.com</p>
               </Card.Body>
             </Card>
           </Col>

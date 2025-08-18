@@ -1,15 +1,9 @@
-//Global Colours
-$primary-color: #48cae4;
-$secondary-color: #cecece;
-$text-color: #000;
-$text-white: #ffffff;
-
 .results-page {
     min-height: 100vh;
     background:
-      radial-gradient(800px 500px at -10% -10%, var($primary-color) 0%, transparent 60%),
-      radial-gradient(700px 450px at 110% 110%, var($text-white) 0%, transparent 60%),
-      linear-gradient(135deg, var(#9beeff) 0%, var($text-white) 100%);
+      radial-gradient(800px 500px at -10% -10%, var(--edu-soft) 0%, transparent 60%),
+      radial-gradient(700px 450px at 110% 110%, var(--edu-soft) 0%, transparent 60%),
+      linear-gradient(135deg, var(--edu-primary) 0%, var(--edu-soft) 100%);
     text-align: center;
     color: #333;
     padding: 2rem;
@@ -21,7 +15,6 @@ $text-white: #ffffff;
   
     p {
       margin-bottom: 2rem;
-      padding: 2rem;
     }
   
     /* Center video cards */
@@ -33,9 +26,8 @@ $text-white: #ffffff;
       margin-top: 2rem;
   
       .video-card {
-        //background: #fff;
-        background: #6b9c9c;
-        border-radius: 16px;
+        background: #fff;
+        border-radius: 12px;
         width: 320px;
         overflow: hidden;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -68,6 +60,29 @@ $text-white: #ffffff;
       }
     }
  
+    /* Gradient button */
+    /*.btn-primary {
+      border: 0;
+      border-radius: 12px;
+      padding: 0.75rem 1.25rem;
+      color: #fff;
+      font-weight: 600;
+      background-image: linear-gradient(90deg, var(--edu-primary), var(--edu-primary-2));
+      transition: transform 0.15s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  
+      &:hover {
+        background-image: linear-gradient(90deg, var(--edu-primary-2), var(--edu-primary));
+        box-shadow: 0 12px 24px rgba(9, 35, 51, 0.35);
+        transform: translateY(-1px);
+        opacity: 0.95;
+      }
+  
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0 6px 16px rgba(39, 114, 160, 0.25);
+      }
+    }*/
+  
     &__button {
         
         background-color: #2a3846;
