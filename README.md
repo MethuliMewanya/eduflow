@@ -18,4 +18,10 @@ EduFlow solves this problem by allowing students to enter their subject and mark
 - Beginner, intermediate, and advanced-level categorization
 - Built with React + Vite + TypeScript frontend and Ballerina backend
 
+### Future Considerations
+
+- Transition from rule-based logic to machine learning for smarter, adaptive recommendations.
+- Deploy on free cloud-based platforms to increase accessibility.
+- Expand to include additional resources like PDFs, quizzes, and interactive exercises.
+
 EduFlow makes learning easier, faster, and more engaging by providing the right resources exactly when they are needed.
