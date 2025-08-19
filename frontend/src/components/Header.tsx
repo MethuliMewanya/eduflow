@@ -62,36 +62,7 @@ const Header: React.FC = () => {
                 Contact US
               </NavLink>
             </li>
-            {/* <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#!"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li>
-                  <Link className="dropdown-item" to="/contact">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/faq">
-                    FAQ
-                  </Link>
-                </li>
-                <li><hr className="dropdown-divider" /></li>
-                <li>
-                  <Link className="dropdown-item" to="/support">
-                    Support
-                  </Link>
-                </li>
-              </ul>
-            </li> */}
+           
           </ul>
         </div>
       </div>
