@@ -28,7 +28,7 @@ $text-white: #ffffff;
     .results-grid {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center; // ✅ ensures all cards center
+      justify-content: center; //  ensures all cards center
       gap: 1.5rem;
       margin-top: 2rem;
   
@@ -108,4 +108,12 @@ $text-white: #ffffff;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
   }
-  
+  .results-page {
+  min-height: calc(100vh - 190px); // adjust 120px = header + footer height
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // centers message if no data
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}

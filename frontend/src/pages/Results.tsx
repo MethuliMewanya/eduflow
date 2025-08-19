@@ -8,7 +8,7 @@ function Results() {
 
   if (!state) {
     return (
-      <div className="container mt-5">
+      <div className="results-page">
         <h4>No data available. Please go back and submit the form.</h4>
         <button className="btn btn-secondary mt-3" onClick={() => navigate('/')}>
           Go Back
@@ -25,7 +25,7 @@ function Results() {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="results-page">
       <h2 className="mb-2 text-center">{subject.toUpperCase()}</h2>
       <h2 className="mb-2 text-center"> {level} Level Recommendations</h2>
       <p className="text-muted text-center mt-2 mb-4">{videos.length} hand-picked learning videos just for you!</p>
